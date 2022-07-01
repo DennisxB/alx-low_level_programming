@@ -1,20 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - prints out the alphabet in lowercase except for 'qe'
+ * main - Entry point
  *
- * Return (0)
- */
+ * Description: print alphabet in lowercase then in uppercase
+ *
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-	char c;
+	char ch = 'a';
+	char CH = 'A';
 
-	for (c = 'a'; c <= 'z'; c++)
+	/*prints a - z*/
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		++ch;
+	}
 
-	if (c != 'e' && c != 'q')
-		putchar(c);
-
+	/*print A - Z*/
+	while (CH <= 'Z')
+	{
+		putchar(CH);
+		++CH;
+	}
 	putchar('\n');
 
 	return (0);
