@@ -1,35 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - Print 2 digit numbers
- *
- * Description: Should appear in the formart provided
- * Return: Always(0) Success
- */
-
+  * main - Prints combination of numbers
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int a, b;
+	int c, i;
 
-	for (a = 48; a < 58; a++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (b = 48; b < 58; b++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			putchar(a);
-			putchar(b);
+			if (c < i)
+			{
+				putchar(c);
+				putchar(i);
 
-		if (a == 57 && b == 57)
-		{
-			break;
-		}
-		else
-		{
-			putchar(',');
-			putchar(' ');
-		}
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
-	putchar ('\n');
+
+	putchar('\n');
 
 	return (0);
 }
