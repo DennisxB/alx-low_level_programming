@@ -1,1 +1,1 @@
-Structures, typedef
+Function pointers
