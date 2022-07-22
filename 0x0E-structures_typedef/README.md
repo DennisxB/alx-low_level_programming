@@ -1,1 +1,1 @@
-Variadic functions
+Structures, typedef
